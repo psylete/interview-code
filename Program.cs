@@ -102,6 +102,7 @@ public void TestCheckBoolean()
 Assert.IsTrue(true);
 }
 
+[Test]
 public void TestGrossTotal()
 {
     var repo = new InventoryRepo();
@@ -110,6 +111,7 @@ public void TestGrossTotal()
     Assert.AreEqual(50, result);
 }
 
+[Test]
 public void TestNetTotal()
 {
     var repo = new InventoryRepo();
@@ -118,6 +120,7 @@ public void TestNetTotal()
     Assert.AreEqual(60, result);
 }
 
+[Test]
 public void TestBulkBuyDiscount()
 {
     var repo = new InventoryRepo();
@@ -126,6 +129,7 @@ public void TestBulkBuyDiscount()
     Assert.AreEqual(1, result);
 }
 
+[Test]
 public void TestBulkBuyDiscount()
 {
     var repo = new InventoryRepo();
@@ -136,6 +140,7 @@ public void TestBulkBuyDiscount()
     Assert.AreEqual(0.8, calculator.BulkBuyDiscount(1000));
 }
 
+[Test]
 public void TestIsStockRunningLow()
 {
     var repo = new InventoryRepo();
@@ -145,6 +150,7 @@ public void TestIsStockRunningLow()
     Assert.IsInstanceOf<bool>(result);
 }
 
+[Test]
 public void TestIsStockAvailable()
 {
     var repo = new InventoryRepo();
